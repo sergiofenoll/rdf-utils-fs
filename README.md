@@ -14,10 +14,10 @@ the fs utils and default parsers/serializers for simplest possible usage in node
 import rdf from '@zazuko/env-node'
         
 // parse
-const dataset = await env.dataset().import(env.fromFile(`/path/to/data.nt`))
+const dataset = await rdf.dataset().import(rdf.fromFile(`/path/to/data.nt`))
 
 // serialise
-await env.toFile(dataset, `/path/to/data.json`)
+await rdf.toFile(dataset, `/path/to/data.json`)
 ```
 
 ## Extend `@zazuko/env` yourself
